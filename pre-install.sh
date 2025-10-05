@@ -3,9 +3,9 @@
 # WARNING: This will ERASE all data on the specified partitions.
 
 DISK="/dev/nvme0n1"   # Change to your actual disk
-EFI="${DISK}p5"       # EFI partition
-SWAP="${DISK}p6"      # Swap partition
-ROOT="${DISK}p7"      # Root partition
+EFI="${DISK}p6"       # EFI partition
+SWAP="${DISK}p7"      # Swap partition
+ROOT="${DISK}p8"      # Root partition
 
 echo "The following partitions will be formatted and mounted:"
 echo "EFI:  $EFI  -> FAT32 (Label: ARCH EFI)"
