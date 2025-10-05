@@ -9,7 +9,7 @@ pacman -Syyu --noconfirm grub efibootmgr dosfstools mtools os-prober
 
 # 2. Variables — change if your mount points differ
 EFI_DIR="/boot"         # the mount point of your EFI partition inside chroot
-BOOTLOADER_ID="Arch"    # what name will appear in firmware (you can change)
+BOOTLOADER_ID="GRUB"    # what name will appear in firmware (you can change)
 
 # 3. Enable OS-prober in GRUB config
 if grep -q "^#GRUB_DISABLE_OS_PROBER=false" /etc/default/grub; then
